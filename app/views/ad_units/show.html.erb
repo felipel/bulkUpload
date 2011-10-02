@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @ad_unit.name %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%= @ad_unit.desc %>
+</p>
+
+<p>
+  <b>Sizes:</b>
+  <%= @ad_unit.sizes %>
+</p>
+
+<p>
+  <b>Target window:</b>
+  <%= @ad_unit.target_window %>
+</p>
+
+<p>
+  <b>Special:</b>
+  <%= @ad_unit.special %>
+</p>
+
+<p>
+  <b>Adsense:</b>
+  <%= @ad_unit.adsense %>
+</p>
+
+
+<%= link_to 'Edit', edit_ad_unit_path(@ad_unit) %> |
+<%= link_to 'Back', ad_units_path %>

@@ -1,0 +1,33 @@
+<h1>Listing ad_units</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Desc</th>
+    <th>Sizes</th>
+    <th>Target window</th>
+    <th>Special</th>
+    <th>Adsense</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ad_units.each do |ad_unit| %>
+  <tr>
+    <td><%= ad_unit.name %></td>
+    <td><%= ad_unit.desc %></td>
+    <td><%= ad_unit.sizes %></td>
+    <td><%= ad_unit.target_window %></td>
+    <td><%= ad_unit.special %></td>
+    <td><%= ad_unit.adsense %></td>
+    <td><%= link_to 'Show', ad_unit %></td>
+    <td><%= link_to 'Edit', edit_ad_unit_path(ad_unit) %></td>
+    <td><%= link_to 'Destroy', ad_unit, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ad unit', new_ad_unit_path %>

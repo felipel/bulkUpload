@@ -1,0 +1,29 @@
+<h1>Listing ad_unit_sizes</h1>
+
+<table>
+  <tr>
+    <th>Width</th>
+    <th>Height</th>
+    <th>Isaspectratio</th>
+    <th>Environmenttype</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ad_unit_sizes.each do |ad_unit_size| %>
+  <tr>
+    <td><%= ad_unit_size.width %></td>
+    <td><%= ad_unit_size.height %></td>
+    <td><%= ad_unit_size.isAspectRatio %></td>
+    <td><%= ad_unit_size.environmentType %></td>
+    <td><%= link_to 'Show', ad_unit_size %></td>
+    <td><%= link_to 'Edit', edit_ad_unit_size_path(ad_unit_size) %></td>
+    <td><%= link_to 'Destroy', ad_unit_size, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ad unit size', new_ad_unit_size_path %>

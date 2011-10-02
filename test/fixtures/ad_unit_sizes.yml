@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  width: 1
+  height: 1
+  isAspectRatio: false
+  environmentType: MyString
+
+two:
+  width: 1
+  height: 1
+  isAspectRatio: false
+  environmentType: MyString

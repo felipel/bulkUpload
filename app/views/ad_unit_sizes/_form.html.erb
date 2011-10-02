@@ -1,0 +1,33 @@
+<%= form_for(@ad_unit_size) do |f| %>
+  <% if @ad_unit_size.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ad_unit_size.errors.count, "error") %> prohibited this ad_unit_size from being saved:</h2>
+
+      <ul>
+      <% @ad_unit_size.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :width %><br />
+    <%= f.text_field :width %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br />
+    <%= f.text_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :isAspectRatio %><br />
+    <%= f.check_box :isAspectRatio %>
+  </div>
+  <div class="field">
+    <%= f.label :environmentType %><br />
+    <%= f.text_field :environmentType %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

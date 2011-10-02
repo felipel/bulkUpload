@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Width:</b>
+  <%= @ad_unit_size.width %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @ad_unit_size.height %>
+</p>
+
+<p>
+  <b>Isaspectratio:</b>
+  <%= @ad_unit_size.isAspectRatio %>
+</p>
+
+<p>
+  <b>Environmenttype:</b>
+  <%= @ad_unit_size.environmentType %>
+</p>
+
+
+<%= link_to 'Edit', edit_ad_unit_size_path(@ad_unit_size) %> |
+<%= link_to 'Back', ad_unit_sizes_path %>
